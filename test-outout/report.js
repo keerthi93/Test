@@ -1,17 +1,17 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/lenovo/eclipse-workspace/ProjectTest/src/main/java/Features/login.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Login Feature",
+  "name": "Amazon Login Feature",
   "description": "",
-  "id": "free-crm-login-feature",
+  "id": "amazon-login-feature",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 266200,
+  "duration": 377700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 132900,
+  "duration": 165100,
   "status": "passed"
 });
 formatter.scenario({
@@ -22,42 +22,54 @@ formatter.scenario({
     }
   ],
   "line": 5,
-  "name": "Free CRM Login Test Scenario",
+  "name": "Amazon Login Test Scenario",
   "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario",
+  "id": "amazon-login-feature;amazon-login-test-scenario",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 7,
-  "name": "user is already on Login Page",
+  "name": "user is in Shopping page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 8,
-  "name": "title of login page is Free CRM",
+  "name": "title of Amazon login page",
   "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "user clicks on Sign-In Button",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "LoginStepDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 10371176100,
+  "duration": 199003034700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 155800300,
+  "duration": 113582600,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - A]mazon.in\u003e but was:\u003c[www.a]mazon.in\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinitions.LoginStepDefinition.title_of_login_page_is_free_CRM(LoginStepDefinition.java:39)\r\n\tat ✽.When title of Amazon login page(C:/Users/lenovo/eclipse-workspace/ProjectTest/src/main/java/Features/login.feature:8)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.user_click_on_SignIn_Button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 1028700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 146500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 177300,
+  "duration": 467800,
   "status": "passed"
 });
 });

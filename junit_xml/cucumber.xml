@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.527699">
-    <testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="10.527699">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Free CRM........................................passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="199.118657">
+    <testcase classname="Amazon Login Feature" name="Amazon Login Test Scenario" time="199.118657">
+        <failure message="junit.framework.ComparisonFailure: expected:&lt;[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - A]mazon.in&gt; but was:&lt;[www.a]mazon.in&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.title_of_login_page_is_free_CRM(LoginStepDefinition.java:39)&#13;&#10;&#9;at ✽.When title of Amazon login page(C:/Users/lenovo/eclipse-workspace/ProjectTest/src/main/java/Features/login.feature:8)&#13;&#10;"><![CDATA[Given user is in Shopping page..............................................passed
+When title of Amazon login page.............................................failed
+Then user clicks on Sign-In Button..........................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - A]mazon.in> but was:<[www.a]mazon.in>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.LoginStepDefinition.title_of_login_page_is_free_CRM(LoginStepDefinition.java:39)
+	at ✽.When title of Amazon login page(C:/Users/lenovo/eclipse-workspace/ProjectTest/src/main/java/Features/login.feature:8)
+]]></failure>
     </testcase>
 </testsuite>

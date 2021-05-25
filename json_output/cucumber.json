@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 266200,
+              "duration": 377700,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
           },
           {
             "result": {
-              "duration": 132900,
+              "duration": 165100,
               "status": "passed"
             },
             "match": {
@@ -30,13 +30,13 @@
           }
         ],
         "line": 5,
-        "name": "Free CRM Login Test Scenario",
+        "name": "Amazon Login Test Scenario",
         "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "id": "amazon-login-feature;amazon-login-test-scenario",
         "after": [
           {
             "result": {
-              "duration": 146500,
+              "duration": 1028700,
               "status": "passed"
             },
             "match": {
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 177300,
+              "duration": 467800,
               "status": "passed"
             },
             "match": {
@@ -58,11 +58,11 @@
         "steps": [
           {
             "result": {
-              "duration": 10371176100,
+              "duration": 199003034700,
               "status": "passed"
             },
             "line": 7,
-            "name": "user is already on Login Page",
+            "name": "user is in Shopping page",
             "match": {
               "location": "LoginStepDefinition.user_already_on_login_page()"
             },
@@ -70,22 +70,34 @@
           },
           {
             "result": {
-              "duration": 155800300,
-              "status": "passed"
+              "duration": 113582600,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - A]mazon.in\u003e but was:\u003c[www.a]mazon.in\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinitions.LoginStepDefinition.title_of_login_page_is_free_CRM(LoginStepDefinition.java:39)\r\n\tat ✽.When title of Amazon login page(C:/Users/lenovo/eclipse-workspace/ProjectTest/src/main/java/Features/login.feature:8)\r\n",
+              "status": "failed"
             },
             "line": 8,
-            "name": "title of login page is Free CRM",
+            "name": "title of Amazon login page",
             "match": {
               "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on Sign-In Button",
+            "match": {
+              "location": "LoginStepDefinition.user_click_on_SignIn_Button()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Free CRM Login Feature",
+    "name": "Amazon Login Feature",
     "description": "",
-    "id": "free-crm-login-feature",
+    "id": "amazon-login-feature",
     "keyword": "Feature",
     "uri": "C:/Users/lenovo/eclipse-workspace/ProjectTest/src/main/java/Features/login.feature"
   }

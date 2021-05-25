@@ -1,11 +1,12 @@
-Feature: Free CRM Login Feature
+Feature: Amazon Login Feature
 
 
 #without Examples Keyword
-Scenario: Free CRM Login Test Scenario
+Scenario: Amazon Login Test Scenario
 
-Given user is already on Login Page
-When title of login page is Free CRM
+Given user is in Shopping page
+When title of Amazon login page
+Then user clicks on Sign-In Button
 #Then user enters username and password
 #Then user clicks on login button
 #Then user is on home page
